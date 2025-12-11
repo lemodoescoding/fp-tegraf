@@ -1,4 +1,4 @@
-# Praktikum TG - Kelas C
+# Praktikum TG - Kelas C - Kelompok C05
 
 | Name | NRP |
 | --- | --- |
