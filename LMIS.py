@@ -34,8 +34,8 @@ n = int(input())
 arr = list(map(int, input().split()))
 
 root = buildTree(arr)
-all_paths = []
-dfs(root, [], all_paths)
-longest = max(all_paths, key=len)
+allPath = []
+dfs(root, [], allPath)
+longest = max(allPath, key=len)
 
 print(longest)
