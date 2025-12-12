@@ -11,9 +11,9 @@ def buildTree(arr):
         buildSubtree(arr, i + 1, arr[i], child)
     return root
 
-def buildSubtree(arr, index, last_value, parent):
+def buildSubtree(arr, index, lastValue, parent):
     for i in range(index, len(arr)):
-        if arr[i] > last_value:
+        if arr[i] > lastValue:
             child = TreeNode(arr[i])
             parent.children.append(child)
             buildSubtree(arr, i + 1, arr[i], child)
@@ -30,7 +30,6 @@ def dfs(node, path, allPaths):
     if node.value is not None:
         path.pop()
 
-n = int(input())
 arr = list(map(int, input().split()))
 
 root = buildTree(arr)
