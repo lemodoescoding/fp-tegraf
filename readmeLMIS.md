@@ -26,7 +26,7 @@ Pada bagian ini, merupakan tempat dimana user dapat memasukan input, dan tempat 
 
 Contoh Input : 
 ```
-a1, a2, a3, ..., an
+a1 a2 a3 ... an
 ```
 
 Contoh Output : 
