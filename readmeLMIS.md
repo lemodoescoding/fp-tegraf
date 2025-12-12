@@ -2,7 +2,7 @@
 
 Implementasi Longest Monotonically Increasing Subsequence (aplikasi menggunakan tree)
 
-`Penjelasan algoritma `
+`Penjelasan algoritma`
 1. Input berupa sequence dengan notasi angka yang dipisahkan oleh spasi tanpa tanda koma. 
 2. Tree akan dibuat untuk memetakan semua kemungkinan increasing subsequence yang mungkin terbentuk. 
 3. Untuk mencari subsequence terpanjang, pencarian dilakukan menggunakan DFS yang setiap sequence yang di track akan disimpan pada sebuah array. 
