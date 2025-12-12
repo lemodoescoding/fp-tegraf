@@ -30,6 +30,9 @@ a1 a2 a3 ... an
 ```
 
 Contoh Output : 
+```
+[a1, a2, a3, ..., n]
+```
 
 `Case 1`
 
