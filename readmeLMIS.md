@@ -32,6 +32,7 @@ a1, a2, a3, ..., an
 Contoh Output : 
 
 `Case 1`
+
 Input 
 ```
 1 2 3 4 5
@@ -43,6 +44,7 @@ Output :
 ```
 
 `Case 2`
+
 Input 
 ```
 5 4 3 2 1
@@ -54,6 +56,7 @@ Output :
 ```
 
 `Case 3`
+
 Input 
 ```
 3 10 4 12 5 6 8 9
@@ -65,6 +68,7 @@ Output :
 ```
 
 `Case 4`
+
 Input 
 ```
 4 1 13 7 0 2 8 11 3
