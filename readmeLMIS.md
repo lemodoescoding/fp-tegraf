@@ -3,7 +3,7 @@
 Implementasi Longest Monotonically Increasing Subsequence (aplikasi menggunakan tree)
 
 `Penjelasan algoritma `
-1. Input berupa banyaknya jumlah sequence, diikuti dengan sequence itu sendiri. 
+1. Input berupa sequence dengan notasi angka yang dipisahkan oleh spasi tanpa tanda koma. 
 2. Tree akan dibuat untuk memetakan semua kemungkinan increasing subsequence yang mungkin terbentuk. 
 3. Untuk mencari subsequence terpanjang, pencarian dilakukan menggunakan DFS yang setiap sequence yang di track akan disimpan pada sebuah array. 
 4. Setelah melakukan DFS dan mendapat subsequence terpanjang, program akan melakukan print pada subsequence terpanjang yang sudah tercatat. 
@@ -23,7 +23,6 @@ Fungtion `dfs` ini bertugas untuk mencari longest subsequence, atau tree dengan 
 
 ![img_alt](./img/5.png)
 Pada bagian ini, merupakan tempat dimana user dapat memasukan input, dan tempat untuk memanggil function yang diperlukan. Setelah user melakukan input, tree dibuat dengan memanggil `buildTree`, kemudian mengalokasikan variabel `allPath` untuk menyimpan semua path yang ada. Variabel `allPath` kemudian dipassing ke function dfs untuk mengisi variabel tersebut dengan semua kemungkinan path yang ada. Kemudian untuk mengambil path terpanjang, atau longest monotonically increasing subsequence, dapat menggunakan `max` yang disimpan pada variabel `longest`. Terakhir, variabel `longest` di print untuk menunjukan increasing subsequence terpanjang.  
-
 
 Contoh Input : 
 ```
