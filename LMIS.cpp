@@ -5,18 +5,13 @@
 using namespace std;
 
 vector<int> longestIncreasingSubsequence(const vector<int>& arr) {
-    if (arr.empty()) {
-        return {};
-    }
-
+    if (arr.empty()) return {};
     int n = arr.size();
     
     vector<int> dp(n, 1);
-    
     vector<int> predecessor(n, -1);
     
-    int max_lis_length = 1;
-    int end_index = 0; 
+    int max_lis_length = 1, end_index = 0; 
 
     for (int i = 1; i < n; ++i) {
         for (int j = 0; j < i; ++j) {
@@ -36,7 +31,6 @@ vector<int> longestIncreasingSubsequence(const vector<int>& arr) {
 
     vector<int> lis_sequence;
     int current_index = end_index;
-
     stack<int> s;
 
     while (current_index != -1) {
@@ -62,21 +56,17 @@ int main() {
     }
 
     cout << "Input Sequence: ";
-    for (int x : sequence) {
-        cout << x << " ";
-    }
+    for (int x : sequence) cout << x << " ";
+    
     cout << endl;
 
     vector<int> lis = longestIncreasingSubsequence(sequence);
-
     cout << "-----------------------------------" << endl;
     cout << "Length of the LIS: " << lis.size() << endl;
     cout << "The Largest Monotonically Increasing Subsequence (LIS) is: ";
     
-    for (int x : lis) {
-        cout << x << " ";
-    }
+    for (int x : lis) cout << x << " ";
+    
     cout << endl;
-
     return 0;
 }
