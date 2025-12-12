@@ -18,15 +18,15 @@ def buildSubtree(arr, index, last_value, parent):
             parent.children.append(child)
             buildSubtree(arr, i + 1, arr[i], child)
 
-def dfs(node, path, all_paths):
+def dfs(node, path, allPaths):
     if node.value is not None:
         path.append(node.value)
     if not node.children:
         if len(path) > 0:
-            all_paths.append(path.copy())
+            allPaths.append(path.copy())
     else:
         for child in node.children:
-            dfs(child, path, all_paths)
+            dfs(child, path, allPaths)
     if node.value is not None:
         path.pop()
 
